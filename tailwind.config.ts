@@ -13,7 +13,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Pretendard-Regular', ...defaultTheme.fontFamily.sans],
+        pretendard: ['Pretendard-Regular', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         background: 'hsl(var(--background))',
