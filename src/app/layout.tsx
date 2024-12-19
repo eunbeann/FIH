@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-pretendard tracking-tighter antialiased`}
       >
         <NavigationMenu className="py-6">
           <NavigationMenuList className="flex justify-evenly">
