@@ -1,12 +1,6 @@
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from '@radix-ui/react-navigation-menu';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import Link from 'next/link';
+import NavBar from './components/common/NavBar';
 import './globals.css';
 
 const geistSans = localFont({
@@ -30,31 +24,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const menuItems = [
-    { href: '', label: 'Eunbean Kwon' },
-    { href: '/info', label: 'Info' },
-    { href: '/works', label: 'Works' },
-    { href: '/contact', label: 'Contact' },
-  ];
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} font-pretendard tracking-tighter antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-[#D4DAE3] font-pretendard tracking-tighter`}
       >
-        <NavigationMenu className="py-6">
-          <NavigationMenuList className="flex justify-evenly">
-            {menuItems.map((item, index) => (
-              <NavigationMenuItem key={index} className="">
-                <Link href={item.href} legacyBehavior passHref>
-                  <NavigationMenuLink className="text-xl font-bold text-[#222B92]">
-                    {item.label}
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-            ))}
-          </NavigationMenuList>
-        </NavigationMenu>
-        {children}
+        <NavBar />
+        <div className="flex h-[calc(100vh-6.5rem)] items-center">
+          {children}
+        </div>
       </body>
     </html>
   );
