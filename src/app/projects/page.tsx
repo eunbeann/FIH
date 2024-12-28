@@ -2,7 +2,7 @@ import ProjectCard from './components/ProjectCard';
 
 export default function ProjectPage() {
   return (
-    <>
+    <div>
       <h1 className="text-[1.625rem] font-bold text-[#1C1E22]">Projects</h1>
       <p className="mb-[3rem] w-[50%]">
         {`I’m a front-end developer with almost 3 years of experience. I currently
@@ -16,6 +16,6 @@ export default function ProjectPage() {
         <ProjectCard />
         <ProjectCard />
       </div>
-    </>
+    </div>
   );
 }
