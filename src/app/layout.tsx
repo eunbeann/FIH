@@ -30,8 +30,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-[#D4DAE3] font-pretendard tracking-tighter`}
       >
         <NavBar />
-        <div className="flex h-[calc(100vh-6.5rem)] items-center">
-          <div className="mx-10 flex h-full justify-center">{children}</div>
+        <div className="flex h-[calc(100vh-6.5rem)] w-full justify-center">
+          <div className="mx-[12rem] flex h-full w-full">{children}</div>
         </div>
       </body>
     </html>
