@@ -8,6 +8,7 @@ const geistSans = localFont({
   variable: '--font-geist-sans',
   weight: '100 900',
 });
+
 const geistMono = localFont({
   src: './fonts/GeistMonoVF.woff',
   variable: '--font-geist-mono',
@@ -31,7 +32,7 @@ export default function RootLayout({
       >
         <NavBar />
         <div className="flex h-[calc(100vh-6.5rem)] w-full justify-center">
-          <div className="mx-[12rem] flex h-full w-full">{children}</div>
+          <div className="mx-[9rem] flex h-full w-full">{children}</div>
         </div>
       </body>
     </html>
