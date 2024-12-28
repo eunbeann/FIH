@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <NavBar />
         <div className="flex h-[calc(100vh-6.5rem)] items-center">
-          {children}
+          <div className="mx-10 flex h-full justify-center">{children}</div>
         </div>
       </body>
     </html>
