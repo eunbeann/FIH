@@ -10,11 +10,19 @@ export default function ContactPage() {
       <h1 className="mb-[1rem] text-[1.625rem] font-bold text-[#1C1E22]">
         Contact
       </h1>
-      <p className="mb-[3rem] w-[50%]">
-        {`I’m a front-end developer with almost 3 years of experience. I currently
-        specialize in Next.js, TypeScript, and Tailwind but I'm al`}
+      <p className="mb-[3rem] w-full whitespace-normal">
+        {`I'm open to looking for new opportunities!`} <br />
+        {`Feel free to reach out if you have a question, or just want to connect
+        :)`}
       </p>
-      <p className="mb-[3rem] w-[50%] underline">{`eunbeann@gmail.com`}</p>
+
+      <Link
+        href="mailto:eunbeann@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <p className="mb-[3rem] w-[50%] underline">{`eunbeann@gmail.com`}</p>
+      </Link>
       <div className="flex gap-4">
         <Link
           href="https://github.com/eunbeann"
