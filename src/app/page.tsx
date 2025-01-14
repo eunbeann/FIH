@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="mx-10 flex h-full items-center justify-center sm:flex-col xl:flex-row">
+    <div className="flex h-full w-full flex-col items-center justify-center xl:mx-10 xl:flex-row">
       <div className="flex h-full w-[50%] flex-col justify-center">
         <h1 className="py-[30px] text-[80px] leading-[80px] -tracking-[5px]">
           Hi <br /> This is Eunbean
@@ -16,7 +16,7 @@ export default function Home() {
         </h5>
       </div>
 
-      <div className="relative flex w-[50%] max-w-[500px] items-center justify-center px-4">
+      <div className="relative mt-[100px] flex w-[50%] max-w-[500px] items-center justify-center pb-4">
         <div className="absolute ml-16 mt-16 h-[20rem] w-[16rem] rounded-md bg-[#9FA4B0]" />
         <Image
           src={eunbean}

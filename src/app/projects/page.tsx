@@ -2,15 +2,14 @@ import ProjectCard from './components/ProjectCard';
 
 export default function ProjectPage() {
   return (
-    <div>
-      <h1 className="mb-[3rem] text-[1.625rem] font-bold text-[#1C1E22]">
-        Projects
-      </h1>
-      {/* <p className="w-[50%]">
-        {`I’m a front-end developer with almost 3 years of experience. I currently
-        specialize in Next.js, TypeScript, and Tailwind but I'm al`}
-      </p> */}
-      <div className="flex flex-wrap gap-[1.8rem]">
+    <div className="w-full">
+      <h1 className="text-[1.625rem] font-bold text-[#1C1E22]">Projects</h1>
+      <p className="w-[50%] whitespace-pre">
+        I love to create a project as a team <br />
+        {`Here are some of the projects I've worked on as a frontend developer.`}
+      </p>
+      {/* <div className="flex flex-wrap justify-center gap-[1.8rem]"> */}
+      <div className="my-[3rem] grid grid-cols-2 gap-[1.8rem]">
         <ProjectCard
           link="https://github.com/Team-Lecue/Lecue-Client"
           title="Lecue"
