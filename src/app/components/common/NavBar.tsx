@@ -19,7 +19,7 @@ export default function NavBar() {
   ];
 
   return (
-    <NavigationMenu className="flex justify-between px-10 py-6">
+    <NavigationMenu className="flex w-full justify-between px-3 py-6 xl:px-10">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
@@ -33,7 +33,7 @@ export default function NavBar() {
           <NavigationMenuItem key={index}>
             <Link href={item.href} legacyBehavior passHref>
               <NavigationMenuLink
-                className={`ml-10 ${
+                className={`ml-1.5 xl:ml-10 ${
                   pathname === item.href ? 'text-black' : 'text-gray4'
                 }`}
               >
