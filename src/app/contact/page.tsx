@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function ContactPage() {
   return (
-    <div className="mt-7">
+    <div className="h-full w-full">
       <h1 className="mb-[1rem] text-[1.625rem] font-bold text-[#1C1E22]">
         Contact
       </h1>
