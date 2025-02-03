@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   description: 'FrontEnd Developer | Eunbean Kwon',
   openGraph: {
     title: 'Eunbean Kwon',
-    description: 'FrontEnd Developer | Eunbean Kwon',
     type: 'website',
     locale: 'en_US',
     url: 'https://eunbeann.site',
