@@ -17,7 +17,6 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: 'Eunbean Kwon',
-  description: 'FrontEnd Developer | Eunbean Kwon',
   openGraph: {
     title: 'Eunbean Kwon',
     type: 'website',
