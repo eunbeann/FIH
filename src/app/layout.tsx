@@ -18,6 +18,11 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: 'Eunbean Kwon',
   description: 'FrontEnd Developer | Eunbean Kwon',
+  icons: [
+    { url: '/favicon.ico', type: 'image/x-icon' },
+    { url: '/favicon.webp', type: 'image/webp' },
+    { url: '/favicon.png', type: 'image/png' },
+  ],
 };
 
 export const viewport: Viewport = {
