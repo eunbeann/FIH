@@ -18,6 +18,20 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: 'Eunbean Kwon',
   description: 'FrontEnd Developer | Eunbean Kwon',
+  openGraph: {
+    title: 'Eunbean Kwon',
+    description: 'FrontEnd Developer | Eunbean Kwon',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://eunbeann.site',
+    siteName: 'Eunbean Kwon',
+    images: [
+      {
+        url: '/og-thumbnail.png',
+        alt: 'Eunbean Kwon',
+      },
+    ],
+  },
   icons: [
     { url: '/favicon.ico', type: 'image/x-icon' },
     { url: '/favicon.webp', type: 'image/webp' },
