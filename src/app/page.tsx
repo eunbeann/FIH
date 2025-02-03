@@ -5,7 +5,7 @@ import VolunteerPage from './volunteer/page';
 
 export default function Main() {
   return (
-    <div className="scrollbar-hidden flex h-full w-screen flex-col gap-y-[8rem] overflow-auto xl:block xl:h-full xl:snap-y xl:snap-mandatory">
+    <div className="scrollbar-hidden flex h-full w-screen flex-col gap-y-[8rem] overflow-auto overflow-x-hidden xl:block xl:h-full xl:snap-y xl:snap-mandatory">
       <div className="flex h-fit xl:h-screen xl:snap-start xl:items-center xl:justify-center">
         <Home />
       </div>
