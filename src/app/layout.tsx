@@ -27,8 +27,6 @@ export const viewport: Viewport = {
   minimumScale: 1.0,
 };
 
-export const appleMobileWebAppCapable: boolean = true;
-
 export default function RootLayout({
   children,
 }: Readonly<{
