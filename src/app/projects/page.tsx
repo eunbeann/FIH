@@ -31,7 +31,7 @@ export default function ProjectPage() {
   ];
 
   return (
-    <div className="mt-[8rem] h-full w-full xl:-mt-[10rem] xl:flex xl:w-[70rem] xl:flex-col xl:justify-center">
+    <div className="h-full w-full xl:-mt-[10rem] xl:flex xl:w-[70rem] xl:flex-col xl:justify-center">
       <h1 className="text-[1.625rem] font-bold text-[#1C1E22]">Projects</h1>
       <p className="flex h-fit w-full">
         I love to create a project as a team <br />
