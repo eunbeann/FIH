@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import NavBar from './components/common/NavBar';
 import './globals.css';
@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   title: 'Eunbean Kwon',
   description: 'FrontEnd Developer | Eunbean Kwon',
 };
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+  maximumScale: 1.0,
+  minimumScale: 1.0,
+};
+
+export const appleMobileWebAppCapable: boolean = true;
 
 export default function RootLayout({
   children,
