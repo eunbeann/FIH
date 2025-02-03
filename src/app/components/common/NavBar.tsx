@@ -28,7 +28,7 @@ export default function NavBar() {
         </NavigationMenuItem>
       </NavigationMenuList>
 
-      <NavigationMenuList className="flex items-center justify-end text-center antialiased">
+      <NavigationMenuList className="hidden items-center justify-end text-center antialiased xl:flex">
         {menuItems.map((item, index) => (
           <NavigationMenuItem key={index}>
             <Link href={item.href} legacyBehavior passHref>
