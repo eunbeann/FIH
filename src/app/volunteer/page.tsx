@@ -65,35 +65,47 @@ export default function VolunteerPage() {
     return groups;
   };
 
-  console.log(groupItems(volunteerList, 6));
-
   return (
-    <div className="h-full w-full">
-      <h1 className="mb-[3rem] text-[1.625rem] font-bold text-[#1C1E22]">
+    <div className="flex w-[20rem] flex-col px-3 xl:mt-0 xl:h-full xl:w-[70rem] xl:justify-center xl:px-0">
+      <h1 className="mb-[1rem] w-full text-[1.625rem] font-bold text-[#1C1E22] xl:pl-[4%]">
         Volunteer Experience
       </h1>
-      <div className="my-[3rem] gap-[1.8rem]">
-        <Carousel>
+
+      {/* desktop */}
+      <div className="hidden xl:flex xl:w-full xl:justify-center">
+        <Carousel className="w-[90%]">
           <CarouselContent>
-            {groupItems(volunteerList, 6).map(
-              (group, index) => (
-                console.log('group :', group),
-                (
-                  <CarouselItem key={index} className="grid grid-cols-3 gap-6">
-                    {group.map((item, subIndex) => (
-                      <ExperienceBox
-                        key={subIndex}
-                        title={item.title}
-                        src={item.src}
-                      />
-                    ))}
-                  </CarouselItem>
-                )
-              ),
-            )}
+            {groupItems(volunteerList, 6).map((group, index) => (
+              <CarouselItem key={index} className="grid grid-cols-3 gap-6">
+                {group.map((item, subIndex) => (
+                  <ExperienceBox
+                    key={subIndex}
+                    title={item.title}
+                    src={item.src}
+                  />
+                ))}
+              </CarouselItem>
+            ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious variant="default" />
+          <CarouselNext variant="default" />
+        </Carousel>
+      </div>
+
+      {/* mobile */}
+      <div className="flex h-fit w-full items-center justify-center xl:hidden">
+        <Carousel className="w-[75%]">
+          <CarouselContent>
+            {volunteerList.map((item, index) => (
+              <CarouselItem key={index} className="">
+                <ExperienceBox title={item.title} src={item.src} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="mt-[3rem]">
+            <CarouselPrevious variant="default" />
+            <CarouselNext variant="default" />
+          </div>
         </Carousel>
       </div>
     </div>

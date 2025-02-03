@@ -13,8 +13,8 @@ export default function ExperienceBox({ title, src }: ExperienceBoxProps) {
       </p>
       <Image
         src={src}
-        alt="psyDuck"
-        className="h-[12rem] w-[315px] rounded-md object-fill"
+        alt="Experience Images"
+        className="rounded-md object-fill xl:h-[12rem] xl:w-[315px]"
       />
     </div>
   );
