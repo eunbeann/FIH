@@ -19,7 +19,7 @@ import ExperienceBox from './components/ExperienceBox';
 
 const volunteerList = [
   {
-    title: 'LikeLion',
+    title: 'LIKELION',
     src: likelion,
   },
   {
@@ -39,15 +39,15 @@ const volunteerList = [
     src: duksungthon,
   },
   {
-    title: 'Mind Photo Studio',
+    title: 'MIND PHOTO STUDIO',
     src: heartGallery,
   },
   {
-    title: 'Goormthon Univ Jeju',
+    title: 'GOORMTHON UNIV JEJU',
     src: jeju,
   },
   {
-    title: 'Naver 1784 School',
+    title: 'NAVER 1784 SCHOOL',
     src: naver,
   },
   {
@@ -67,7 +67,7 @@ export default function VolunteerPage() {
 
   return (
     <div className="flex w-[20rem] flex-col px-3 xl:mt-0 xl:h-full xl:w-[70rem] xl:justify-center xl:px-0">
-      <h1 className="mb-[1rem] w-full text-[1.625rem] font-bold text-[#1C1E22] xl:pl-[4%]">
+      <h1 className="mb-[1rem] w-full text-[1rem] font-bold text-[#1C1E22] xl:pl-[4%] xl:text-[1.625rem]">
         Volunteer Experience
       </h1>
 

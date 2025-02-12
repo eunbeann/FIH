@@ -18,7 +18,7 @@ export default function ProjectPage() {
       title: 'bbogak',
       link: 'https://github.com/depromeet/bbo-gak-client',
       description:
-        '행운의 포춘쿠키를 🥠 뽀각! 💥 깨보세요! 🍀 취뽀행운 🍀이 당신을 기다려요!',
+        'Crack open your lucky fortune cookie! 🥠💥 A job offer fortune 🍀 is waiting for you!',
       tags: 'TypeScript',
     },
     {

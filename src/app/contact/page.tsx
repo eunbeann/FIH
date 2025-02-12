@@ -12,8 +12,8 @@ export default function ContactPage() {
       </h1>
       <p className="mb-[3rem] w-full whitespace-normal">
         {`I'm open to looking for new opportunities!`} <br />
-        {`Feel free to reach out if you have a question, or just want to connect
-        :)`}
+        {`Feel free to reach out if you have a question,`} <br />
+        {`or just want to connect :)`}
       </p>
 
       <Link
