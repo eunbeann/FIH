@@ -31,13 +31,13 @@ export default function ProjectPage() {
   ];
 
   return (
-    <div className="h-full w-full xl:-mt-[10rem] xl:flex xl:w-[70rem] xl:flex-col xl:justify-center">
+    <div className="h-full w-full lg:flex lg:h-[cal(100vh-10rem)] lg:w-[70rem] lg:flex-col lg:justify-center xl:-mt-[10rem] xl:flex xl:w-[70rem] xl:flex-col xl:justify-center">
       <h1 className="text-[1.625rem] font-bold text-[#1C1E22]">Projects</h1>
       <p className="flex h-fit w-full">
         I love to create a project as a team <br />
         {`Here are some of the projects I've worked on as a frontend developer.`}
       </p>
-      <div className="my-[3rem] grid gap-2 xl:grid-cols-2 xl:gap-[1.8rem]">
+      <div className="my-[3rem] grid gap-2 lg:grid-cols-2 lg:gap-[1.8rem] xl:grid-cols-2 xl:gap-[1.8rem]">
         {projectsList.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

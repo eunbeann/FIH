@@ -14,6 +14,16 @@ export default function Home() {
           readable code conducive to collaboration, and to collaborate on
           creating web pages that everyone can empathize with.
         </h5>
+        <h5 className="mt-[20px] font-bold">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer transition-colors hover:text-blue-700"
+          >
+            Check my Resume
+          </a>
+        </h5>
       </div>
 
       <div className="relative mt-[5rem] flex w-[50%] max-w-[500px] items-center justify-center pb-4 xl:mt-[100px]">
