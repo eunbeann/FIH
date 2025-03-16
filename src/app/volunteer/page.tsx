@@ -66,13 +66,13 @@ export default function VolunteerPage() {
   };
 
   return (
-    <div className="flex w-[20rem] flex-col px-3 xl:mt-0 xl:h-full xl:w-[70rem] xl:justify-center xl:px-0">
-      <h1 className="mb-[1rem] w-full text-[1rem] font-bold text-[#1C1E22] xl:pl-[4%] xl:text-[1.625rem]">
+    <div className="flex w-[20rem] flex-col px-3 lg:mt-0 lg:h-full lg:w-[70rem] lg:justify-center lg:px-0 xl:h-full xl:w-[70rem] xl:justify-center xl:px-0">
+      <h1 className="mb-[1rem] w-full text-[1rem] font-bold text-[#1C1E22] lg:pl-[4%] lg:text-[1.625rem] xl:pl-[4%] xl:text-[1.625rem]">
         Volunteer Experience
       </h1>
 
       {/* desktop */}
-      <div className="hidden xl:flex xl:w-full xl:justify-center">
+      <div className="hidden lg:flex lg:w-full lg:justify-center xl:flex xl:w-full xl:justify-center">
         <Carousel className="w-[90%]">
           <CarouselContent>
             {groupItems(volunteerList, 6).map((group, index) => (
@@ -93,7 +93,7 @@ export default function VolunteerPage() {
       </div>
 
       {/* mobile */}
-      <div className="flex h-fit w-full items-center justify-center xl:hidden">
+      <div className="flex h-fit w-full items-center justify-center lg:hidden xl:hidden">
         <Carousel className="w-[75%]">
           <CarouselContent>
             {volunteerList.map((item, index) => (

@@ -19,7 +19,7 @@ export default function NavBar() {
   ];
 
   return (
-    <NavigationMenu className="flex w-full justify-between px-3 py-6 xl:px-10">
+    <NavigationMenu className="flex w-full justify-between px-3 py-6 lg:px-10 xl:px-10">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
@@ -28,12 +28,12 @@ export default function NavBar() {
         </NavigationMenuItem>
       </NavigationMenuList>
 
-      <NavigationMenuList className="hidden items-center justify-end text-center antialiased xl:flex">
+      <NavigationMenuList className="hidden items-center justify-end text-center antialiased lg:flex xl:flex">
         {menuItems.map((item, index) => (
           <NavigationMenuItem key={index}>
             <Link href={item.href} legacyBehavior passHref>
               <NavigationMenuLink
-                className={`ml-1.5 xl:ml-10 ${
+                className={`ml-1.5 lg:ml-10 xl:ml-10 ${
                   pathname === item.href ? 'text-black' : 'text-gray4'
                 }`}
               >

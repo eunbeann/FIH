@@ -6,11 +6,11 @@ import Link from 'next/link';
 
 export default function ContactPage() {
   return (
-    <div className="mb-[4rem] flex h-full w-[70rem] flex-col justify-center xl:mb-0">
+    <div className="mb-[4rem] flex h-[calc(100vh-10rem)] w-[70rem] flex-col justify-center">
       <h1 className="mb-[1rem] text-[1.625rem] font-bold text-[#1C1E22]">
         Contact
       </h1>
-      <p className="mb-[3rem] w-full whitespace-normal">
+      <p className="mb-[3rem] w-full whitespace-normal lg:mb-[3rem] xl:mb-[3rem]">
         {`I'm open to looking for new opportunities!`} <br />
         {`Feel free to reach out if you have a question,`} <br />
         {`or just want to connect :)`}
@@ -21,7 +21,9 @@ export default function ContactPage() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p className="mb-[3rem] w-[50%] underline">{`eunbeann@gmail.com`}</p>
+        <p className="mb-[3rem] w-[50%] underline lg:mb-[3rem] lg:w-[50%] xl:mb-[3rem] xl:w-[50%]">
+          {`eunbeann@gmail.com`}
+        </p>
       </Link>
       <div className="flex gap-4">
         <Link
