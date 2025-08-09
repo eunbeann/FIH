@@ -1,3 +1,4 @@
+import rightArrow from '@/assets/icons/rightArrow.svg';
 import eunbean from '@/assets/images/eunbean.jpeg';
 import Image from 'next/image';
 
@@ -14,13 +15,9 @@ export default function Home() {
           readable code conducive to collaboration, and to collaborate on
           creating web pages that everyone can empathize with.
         </h5>
-        <h5 className="mt-[20px] font-bold">
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer transition-colors hover:text-blue-700"
-          >
+        <h5 className="mt-[20px] flex w-fit cursor-pointer rounded-full border-2 border-[#5A677B] p-2 px-4 font-bold text-[#5A677B] transition-colors hover:text-blue-700">
+          <Image src={rightArrow} alt="rightArrow" className="mr-2" />
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             Check my Resume
           </a>
         </h5>
@@ -30,7 +27,7 @@ export default function Home() {
         <div className="absolute ml-10 mt-10 h-[11.8rem] w-[9.3rem] rounded-md bg-[#9FA4B0] xl:ml-16 xl:mt-16 xl:h-[20rem] xl:w-[16rem]" />
         <Image
           src={eunbean}
-          alt="eunbeanProfilePic"
+          alt="rightArrow"
           className="relative z-40 h-[11.8rem] w-[9.3rem] rounded-md object-cover lg:h-[18rem] lg:w-[14rem] xl:h-[20rem] xl:w-[16rem]"
         />
         <div className="absolute z-50 -ml-[7rem] -mt-[12rem] flex shrink-0 -rotate-[23deg] items-center justify-center bg-gray-700 px-[1rem] py-[0.3rem] text-[1rem] text-[#DCE5EC] lg:-ml-[10rem] lg:-mt-[18rem] lg:px-[3rem] xl:-ml-[10rem] xl:-mt-[18rem] xl:px-[3rem]">

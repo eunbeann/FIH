@@ -10,15 +10,17 @@ export default function CareerPage() {
   const careerList: CareerTypes[] = [
     {
       title: 'LuaSoft',
-      date: 'Feb. 2024 - Aug. 2024',
-      duration: '7 months',
-      location: 'Yongin, Gyeonggi, South Korea',
+      date: 'Jul. 2022 – Jan. 2023, Feb. 2024 – Aug. 2024',
+      duration: 'Total 7 months',
+      location: 'Seoul, South Korea',
       tags: [
         'JavaScript',
         'Problem Solving',
         'System Optimization',
         'Debugging',
         'QA Collaboration',
+        'UX Improvement',
+        'Refactoring',
       ],
     },
     {
@@ -36,16 +38,13 @@ export default function CareerPage() {
       ],
     },
     {
-      title: 'LuaSoft',
-      date: 'Jul. 2022 - Jan. 2023',
-      duration: '7 months',
-      location: 'Yongin, Gyeonggi, South Korea',
+      title: 'BTI Solutions',
+      date: 'June. 2025 -',
+      duration: 'present',
+      location: 'Texas, US',
       tags: [
         'JavaScript',
-        'Problem Solving',
-        'System Optimization',
-        'UX Improvement',
-        'Refactoring',
+        'React.js',
       ],
     },
   ];
@@ -54,7 +53,7 @@ export default function CareerPage() {
     <div className="h-full w-full lg:flex lg:h-[cal(100vh-10rem)] lg:w-[70rem] lg:flex-col lg:justify-center xl:-mt-[10rem] xl:flex xl:w-[70rem] xl:flex-col xl:justify-center">
       <h1 className="text-[1.625rem] font-bold text-[#1C1E22]">Careers</h1>
       <p className="flex h-fit w-full">
-        I have almost 2 years of experience as a frontend developer <br />
+        I have almost 2 years of experience as a software developer <br />
       </p>
       <div className="h-full w-full lg:flex lg:h-[cal(100vh-10rem)] lg:w-[70rem] lg:flex-col lg:justify-center xl:-mt-[10rem] xl:flex xl:w-[70rem] xl:flex-col xl:justify-center">
         {careerList.map((career, index) => (

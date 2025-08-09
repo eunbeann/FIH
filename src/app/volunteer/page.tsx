@@ -57,6 +57,7 @@ const volunteerList = [
 ];
 
 export default function VolunteerPage() {
+
   const groupItems = <T,>(items: T[], groupSize: number): T[][] => {
     const groups = [];
     for (let i = 0; i < items.length; i += groupSize) {
@@ -73,7 +74,8 @@ export default function VolunteerPage() {
 
       {/* desktop */}
       <div className="hidden lg:flex lg:w-full lg:justify-center xl:flex xl:w-full xl:justify-center">
-        <Carousel className="w-[90%]">
+        {/* <Carousel className="w-[90%]"> */}
+        <Carousel className="w-full">
           <CarouselContent>
             {groupItems(volunteerList, 6).map((group, index) => (
               <CarouselItem key={index} className="grid grid-cols-3 gap-6">
