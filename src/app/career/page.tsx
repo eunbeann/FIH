@@ -42,10 +42,7 @@ export default function CareerPage() {
       date: 'June. 2025 -',
       duration: 'present',
       location: 'Texas, US',
-      tags: [
-        'JavaScript',
-        'React.js',
-      ],
+      tags: ['JavaScript', 'React.js'],
     },
   ];
 

@@ -57,7 +57,6 @@ const volunteerList = [
 ];
 
 export default function VolunteerPage() {
-
   const groupItems = <T,>(items: T[], groupSize: number): T[][] => {
     const groups = [];
     for (let i = 0; i < items.length; i += groupSize) {
